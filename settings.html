@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Settings - Online Information Platform</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/stylesheets/settings.css">
+    <script src="public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="public/images/favico.ico">
+</head>
+<body class="oip">
+<header>
+	<nav class="navbar navbar-default">
+		<img class="bys-logo pull-left" src="public/images/logo_32x32.png" >
+		<span class="user-info"> Hi <strong>checker</strong>, welcome back! Today is <date>MM/dd/yyy</date>.</span>
+	  <div class="collapse navbar-collapse pull-right">
+	    <ul class="nav navbar-nav">
+	    	<li class="icon">
+	    		<a id="settings" title="Account Settings">
+	    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+	    		</a>
+	    	</li>
+	    	<li class="icon">
+	    		<a id="logout" title="Logout">
+	    			<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+	    		</a>
+	    	</li>
+	    </ul>
+	  </div>
+	</nav>
+</header>
+
+<section class="container oip-settings">
+	<div class="row">
+		<div class="col-md-6">
+			<form class="account" action="post">
+				<div class="form-group">
+					<label for="userEmail">Edit Email Address</label>
+					<span id="email-error" class="error message"></span>
+					<input type="email" id="userEmail" class="form-control" name="email" value="">
+				</div>
+				
+				<div class="form-group">
+					<label for="oldpassword">Update Password</label> <span id="password-error" class="error message"></span>
+					<input type="password" id="oldpassword" name="oldpassword" class="form-control" placeholder="Enter Your Current Password">
+				</div>
+				<div class="form-group">
+					<input type="password" id="password" name="newpassword" class="form-control" placeholder="Enter a New Password">
+				</div>
+				<div class="form-group">
+					<input type="password" id="confirmedpassword" name="renewpassword" class="form-control" placeholder="Verify New Password">
+					<span class="password tips">New password must be at least 6 characters and must start with letters. Support special characters: !@#$%^&*</span>
+				</div>
+				<button type="button" id="savechanges" class="btn btn-primary pull-right">Save Changes</button>
+				<button type="button" id="cancel" class="btn btn-default pull-right">Cancel</button>	
+				<div class="clearfix"></div>
+				<div class="form-group">
+					<label for="username">Rest Password for: </label> <span id="rest-error" class="error message"></span>
+					<select class="form-control" id="username" name="username">
+						<option value="-1"></option>
+						<option value="userA">userA</option>
+						<option value="userB">userB</option>
+						<option value="userC">userC</option>
+					</select>
+					<span class="tips">Reset password for all selected users is: abc123</span>
+				</div>
+				<button type="button" id="reset" class="btn btn-default pull-right">Rest</button>
+			</form>
+		</div>
+		<div class="col-md-6">
+			
+		</div>
+	</div>
+
+</section>
+<script type="text/javascript">
+var changeEmail = false;
+var changePassword= false;
+var changeEmailMsg = "";
+var changePasswordMsg = "";
+</script>
+<script src="public/javascripts/utils.js"></script>
+<script src="public/javascripts/settings.js"></script>
+</body>
+</html>

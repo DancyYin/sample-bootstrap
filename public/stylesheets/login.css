@@ -1,0 +1,40 @@
+.oip .oip-login {
+	width: 80%;
+	min-width: 300px;
+	padding: 10vh 2vw 0 2vw;
+}
+
+.oip .oip-login .row form{
+	border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px 30px 20px 30px;
+    overflow-y: auto;
+}
+
+.oip .oip-login form h3 {
+	height:42px;	
+}
+
+.oip .oip-login .row .col-md-6 {
+	min-width: 300px;
+}
+
+.oip .oip-login span.error.red {
+    color: red;
+    font-size: 12px;
+    margin-left:8px;
+}
+
+.oip footer p.copyright {
+	color: #999;
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+.oip form .dividing-line {
+	border-bottom: 1px dotted #ccc;
+}
+
+.oip header img.bys-logo {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+.oip {
+	font-family: 'FontAwesome';
+}
+
+.oip a {
+	cursor: pointer;
+}
+
+.oip header nav {
+	padding: 12px 25px 0 25px
+}
+
+.oip header nav span.user-info {
+	padding: 0 25px;
+	font-size: 14px;
+	line-height: 32px;
+}
+
+.oip header nav ul li.icon {
+	font-size: 18px;
+}
+
+.oip section.oip-welcome {
+	padding: 13vh 0 0 1vw;
+	
+}
+
+.oip section.oip-welcome ul li {
+	margin: 10px;
+}
+
+.oip section.oip-welcome ul li .glyphicon{
+	font-size: 100px;
+}
+
+.oip section.oip-welcome ul li .glyphicon-class {
+	font-size: 16px;
+	line-height: 200%;
+}
+.oip section.oip-welcome ul li span {
+	display: block;
+	padding: 0 25px;
+    text-align: center;
+}
+
+.oip section.oip-welcome .announcement.panel-default>.panel-heading {
+	background: #337ab7;
+	color: #fff;
+}

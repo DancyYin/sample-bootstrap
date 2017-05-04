@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome - Online Information Platform</title>
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/stylesheets/welcome.css">
+    <script src="public/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="public/images/favico.ico">
+</head>
+
+<body class="oip">
+<header>
+	<nav class="navbar navbar-default">
+		<img class="bys-logo pull-left" src="public/images/logo_32x32.png" >
+		<span class="user-info"> Hi <strong>dancy</strong>, welcome back! Today is <date>MM/dd/yyy</date>.</span>
+	  <div class="collapse navbar-collapse pull-right">
+	    <ul class="nav navbar-nav">
+	    	<li class="icon">
+	    		<a id="settings" title="Account Settings">
+	    			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+	    		</a>
+	    	</li>
+	    	<li class="icon">
+	    		<a id="logout" title="Logout">
+	    			<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+	    		</a>
+	    	</li>
+	    </ul>
+	  </div>
+	</nav>
+</header>
+<section class="container oip-welcome">
+	<div class="row">
+		<div class="col-md-8">
+			<ul class="nav nav-pills" role="tablist">
+				<li role="presentation">
+					<a id="dailyrecords">
+						<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+          				<span class="glyphicon-class">Daily Records</span>
+					</a>
+				</li>
+				<li role="presentation">
+					<a id="projectaccounts">
+						<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+          				<span class="glyphicon-class">Projects & Accounts</span>
+					</a>
+				</li>
+				<li>
+					<a id="projectteam">
+						<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+          				<span class="glyphicon-class">Project Teams</span>
+					</a>
+				</li>
+				<li>
+					<a id="setnameist">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+          				<span class="glyphicon-class">Set Name List</span>
+					</a>
+				</li>
+				<li><a id="exportreport">
+						<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+          				<span class="glyphicon-class">Export Report</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+			<div class="announcement panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">System Announcement</h3>
+			  </div>
+			  <div class="panel-body">
+			    <p>1. Please amend primitive password when log in OIP for the first time;</p>
+				<p>2. Any problems or suggestions , please send mail to OIP: (devoip@gmail.com). Thank you!</p>
+			  </div>
+			</div>
+		</div>
+		<form class="hidden" method="post"></form>
+	</div>
+</section>
+
+<script src="public/javascripts/utils.js"></script>
+<script src="public/javascripts/welcome.js"></script>
+</body>
+</html>
